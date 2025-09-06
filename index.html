@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhu kumari - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .skill-bar {
+            transition: width 2s ease-in-out;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #667eea;
+        }
+         .circle{
+      width: 130px;       
+      height: 130px;      
+      border-radius: 100%; 
+      object-fit: cover;  
+    }
+    .circles{
+        width: 100%;
+        height: 100%;
+    
+        object-fit: cover;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">M.K</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-purple-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-purple-600">About</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-purple-600">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-purple-600">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-purple-600">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-purple-600">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-purple-600">About</a>
+                <a href="#projects" class="block py-2 text-gray-600 hover:text-purple-600">Projects</a>
+                <a href="#skills" class="block py-2 text-gray-600 hover:text-purple-600">Skills</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white">
+        <div class="text-center px-6 fade-in">
+            <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-white/20 flex items-center justify-center text-6xl">
+               <image src="My photo3.jpg" class="circle"></image>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Madhu Kumari</h1>
+            <p class="text-xl md:text-2xl mb-8 text-white/90">Frontend Developer</p>
+            <p class="text-lg mb-12 max-w-2xl mx-auto text-white/80">
+                Driven to build elegant, user-friendly web applications that combine creativity and functionality to solve real-world challenges.
+            </p>
+            
+            <div class="flex justify-center space-x-4 mt-6 flex-wrap">
+    <a href="Deep Purple Professional College Student CV Resume (1).jpg" 
+       class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300">
+        View My Resume
+    </a>
+    <a href="#contact" 
+       class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300">
+        Contact Me
+    </a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+    
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="w-full h-80 bg-gradient-to-br from-purple-400 to-blue-500 rounded-2xl flex items-center justify-center text-8xl">
+                        <image src="My photo4.jpg" class="circles"></image>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6">About Me</h2>
+                    <p class="text-gray-600 mb-6">
+                       I am a passionate Frontend Developer with hands-on knowledge of HTML, CSS, JavaScript, 
+                       and responsive design. I enjoy creating web applications that are not only visually appealing
+                        but also intuitive and user-friendly. My goal is to build digital solutions that solve real-world 
+                        problems, enhance user experiences, and combine creativity with functionality. 
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                       I am eager to learn new technologies, tackle challenges, and contribute
+                        to projects that make a meaningful impact.”
+                    </p>
+                             <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Problem solving</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Leadership</span>
+                    
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Continous Learning</span>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Here are some of my recent projects that showcase my skills and passion for development.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-6xl">
+                    <image src="Screenshot (37).png" class="main"></image>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Car-Rental</h3>
+                        <p class="text-gray-600 mb-4">
+                            Full-stack car-rental website with HTML, CSS, JavaScript, Node.js, and MongoDB.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-4">
+                          
+                            <a href="https://madhu707kumari.github.io/Car-rental-project/" class="text-purple-600 hover:text-purple-800 font-medium">
+                              <button>Live Demo</button>  
+                            </a>
+                            <a href="https://github.com/Madhu707kumari/Car-rental-project"class="text-gray-600 hover:text-gray-800 font-medium">
+                            <button>GitHub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-6xl">
+                    <image src="Screenshot 2025-09-05 164015.png" class="main"></image>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Calculator</h3>
+                        <p class="text-gray-600 mb-4">
+                           A user-friendly calculator built with HTML, CSS, and JavaScript that performs 
+                           basic arithmetic operations efficiently.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://madhu707kumari.github.io/CodeAlpha_Calculator/" class="text-purple-600 hover:text-purple-800 font-medium">
+                              <button>Live Demo</button>  
+                            </a>
+                            <a href="https://github.com/Madhu707kumari/CodeAlpha_Calculator"class="text-gray-600 hover:text-gray-800 font-medium">
+                            <button>GitHub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center text-6xl">
+                        <image src="Screenshot 2025-09-05 165359.png" class="main"></image>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">NGO-website</h3>
+                        <p class="text-gray-600 mb-4">
+                           A responsive NGO website built with HTML, CSS, and JavaScript to provide information, 
+                           showcase initiatives, and engage visitors effectively.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://madhu707kumari.github.io/NGO-website/" class="text-purple-600 hover:text-purple-800 font-medium">
+                              <button>Live Demo</button>  
+                            </a>
+                            <a href="https://github.com/Madhu707kumari/NGO-website"class="text-gray-600 hover:text-gray-800 font-medium">
+                            <button>GitHub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Project 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center text-6xl">
+                        <image src="Screenshot 2025-09-05 170656.png" class="main"></image>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Clat-website-enhancement</h3>
+                        <p class="text-gray-600 mb-4">
+                           Enhanced a CLAT website using HTML, CSS, and JavaScript to improve user experience, 
+                           navigation, and overall functionality.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://madhu707kumari.github.io/clar-website-enhancement/" class="text-purple-600 hover:text-purple-800 font-medium">
+                              <button>Live Demo</button>  
+                            </a>
+                            <a href="https://github.com/Madhu707kumari/clar-website-enhancement"class="text-gray-600 hover:text-gray-800 font-medium">
+                            <button>GitHub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Project 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center text-6xl">
+                        <image src="Screenshot 2025-09-05 171008.png" class="main"></image>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Intern-Volunteer-Registration-form</h3>
+                        <p class="text-gray-600 mb-4">
+                          Developed an Intern Volunteer Registration Form using HTML, CSS, and JavaScript to collect 
+                          and manage volunteer information efficiently.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://madhu707kumari.github.io/Intern-Volunteer-Registration-form/" class="text-purple-600 hover:text-purple-800 font-medium">
+                              <button>Live Demo</button>  
+                            </a>
+                            <a href="https://github.com/Madhu707kumari/Intern-Volunteer-Registration-form"class="text-gray-600 hover:text-gray-800 font-medium">
+                            <button>GitHub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+   <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills & Technologies</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    I work with modern technologies to build scalable and efficient solutions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Technical Skills -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Technical Skills</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">HTML</span>
+                                <span class="text-gray-600">100%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="100%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">React</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="50%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">CSS</span>
+                                <span class="text-gray-600">100%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="100%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">JavaScript</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Tools & Technologies</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        
+                      <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                         <div class="text-2xl">
+                             <i class="fa-brands fa-react"></i>
+                         </div> 
+                         <span class="font-medium text-gray-700">React</span>
+                         </div>
+
+
+                        <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">VS Code</Code></span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">Canva</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Let's Work Together</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Contact Me</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                             <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                
+                                <div class="font-medium text-gray-800">Email</div>
+                                <div class="text-gray-600">
+                                    <a href="0120madhukumari@email.com">
+                                        <p class="text-gray-800 font-medium">0120madhukumari@email.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-800">LinkedIn</div>
+                                <div class="text-gray-600">
+                                    <a href="https://www.linkedin.com/in/madhu-kumari-a243b526a/">
+                                        <p class="text-gray-800 font-medium">"https://www.linkedin.com/in/madhu-kumari-a243b526a/</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 text-xl">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-800">GitHub</div>
+                                <div class="text-gray-600">
+                                    <a href="https://github.com/Madhu707kumari">
+                                <p class="text-gray-800 font-medium">//github.com/Madhu707kumari>
+                                </a>
+                            </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <form name="submit-to-google-sheet" onsubmit="handleSubmit(event)">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" name="Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition duration-200">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition duration-200">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea rows="5" name="Message" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition duration-200 resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="text-2xl font-bold mb-4">Madhu kumari</div>
+            <p class="text-gray-400 mb-8">Frontend developer</p>
+            
+            <div class="text-gray-400 text-sm">
+                © 2025 Madhu kumari. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate skill bars when skills section is visible
+                    if (entry.target.closest('#skills')) {
+                        setTimeout(() => {
+                            const skillBars = entry.target.querySelectorAll('.skill-bar');
+                            skillBars.forEach(bar => {
+                                const width = bar.getAttribute('data-width');
+                                bar.style.width = width;
+                            });
+                        }, 300);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form elements
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent! ✓';
+                submitBtn.classList.remove('bg-purple-600', 'hover:bg-purple-700');
+                submitBtn.classList.add('bg-green-600');
+                
+                // Reset form
+                form.reset();
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-green-600');
+                    submitBtn.classList.add('bg-purple-600', 'hover:bg-purple-700');
+                }, 3000);
+            }, 1500);
+        }
+
+        // Add active nav link highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('text-purple-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-purple-600');
+                }
+            });
+        });
+    </script>
+      <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyBEcc8Jga78Y61jAN2RN4t8WpDpUNRY5ejrYqBdF4_QaoSBPd23wNlngF92tTjTNI0JQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message send successfully"
+setTimeout(function(){
+    msg.innerHTML = ""
+      },5000)
+    })
+      form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
